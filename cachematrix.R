@@ -1,3 +1,7 @@
+#Created a function to cache an object to same time.
+
+#function creates and caches inverse
+
 makeCacheMatrix <- function(x = numeric()) {
         m <- NULL
         set <- function(y) {
@@ -11,6 +15,8 @@ makeCacheMatrix <- function(x = numeric()) {
              setinv = setsolve,
              getinv = getsolve)
 }
+
+#function runs caches inverse
 
 cacheSolve <- function(x, ...) {
         m <- x$getsolve()
